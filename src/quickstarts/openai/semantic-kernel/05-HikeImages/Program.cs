@@ -15,9 +15,9 @@ string key = config["OpenAIKey"];
 OpenAITextToImageService textToImageService = new(key, null);
 
 // Generate the image
-string imageUrl = await textToImageService.GenerateImageAsync("""
+var imageUrl = await textToImageService.GetImageContentsAsync("""
     A postal card with an happy hiker waving and a beautiful mountain in the background.
     There is a trail visible in the foreground.
     The postal card has text in red saying: 'You are invited for a hike!'
-    """, 1024, 1024);
+    """);
 Console.WriteLine($"The generated image is ready at:\n{imageUrl}");
