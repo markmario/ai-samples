@@ -1,4 +1,8 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+﻿// Licensed to the .NET Foundation under one or more agreements.
+// The .NET Foundation licenses this file to you under the MIT license.
+// See the LICENSE file in the project root for more information.
+
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Http;
 using Microsoft.SemanticKernel;
@@ -11,7 +15,7 @@ var openAIChatCompletionModelName = "gpt-3.5-turbo"; // this could be other mode
 var builder = Kernel.CreateBuilder();
 
 // injecting services to the kernel such as logging, http client, redaction.
-builder.Services.AddLogging(b => b.AddConsole().SetMinimumLevel(LogLevel.Trace));
+builder.Services.AddLogging(b => b.AddConsole().SetMinimumLevel(LogLevel.Information));
 
 builder.Services.ConfigureHttpClientDefaults(b =>
 {

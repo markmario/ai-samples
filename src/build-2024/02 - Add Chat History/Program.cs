@@ -1,4 +1,8 @@
-﻿using Microsoft.SemanticKernel;
+﻿// Licensed to the .NET Foundation under one or more agreements.
+// The .NET Foundation licenses this file to you under the MIT license.
+// See the LICENSE file in the project root for more information.
+
+using Microsoft.SemanticKernel;
 using Microsoft.SemanticKernel.ChatCompletion;
 
 var openAIChatCompletionModelName = "gpt-3.5-turbo"; // this could be other models like "gpt-4o".

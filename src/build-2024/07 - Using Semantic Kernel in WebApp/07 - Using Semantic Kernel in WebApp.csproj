@@ -10,6 +10,7 @@
   <ItemGroup>
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
     <PackageReference Include="Microsoft.SemanticKernel" Version="1.15.0" />
+    <PackageReference Include="System.Text.Json" Version="9.0.0-preview.4.24266.19" />
   </ItemGroup>
 
 </Project>
