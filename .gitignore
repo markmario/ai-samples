@@ -406,3 +406,4 @@ FodyWeavers.xsd
 
 # Data
 **/src/chat/CustomerSupport/data/manual-chunks.json
+launchSettings.json
